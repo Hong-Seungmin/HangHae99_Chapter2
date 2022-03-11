@@ -1,4 +1,7 @@
+# https://leetcode.com/problems/3sum/
+
 from typing import List
+
 
 # 주어진 숫자 List에서 합이 0이 되는 숫자 3개의 조합을 출력한다.
 # 조합과 순열의 중 조합의 방식으로 풀어야하기에 정렬을 사용한 중복숫자를 찾아내야한다.
@@ -51,7 +54,7 @@ def threeSum2(nums: List[int]) -> List[List[int]]:
         # left와 right가 같아질때까지 반복한다.
         # left와 right가 같다는 것은 더이상 조합할 숫자가 없다는 의미이다.
         while left < right:
-            sum = nums[i] + nums[left] + nums[right] # 기준숫자, 처음숫자, 끝숫자를 더한다.
+            sum = nums[i] + nums[left] + nums[right]  # 기준숫자, 처음숫자, 끝숫자를 더한다.
 
             # 합이 음수라면 left를 움직여 더 큰 숫자를 합한다. (left는 오름차순으로 이동)
             if sum < 0:

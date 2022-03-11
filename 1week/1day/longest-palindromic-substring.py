@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/longest-palindromic-substring/
+
 # 팰린드롬이란, 서로 대칭하는 문자열을 의미한다.
 # 'acbca' 혹은 'acbbca' 등 짝수 문자열, 홀수 문자열로 두가지 타입이 있다.
 
