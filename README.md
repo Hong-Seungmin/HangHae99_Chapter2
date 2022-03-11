@@ -1,11 +1,187 @@
 # HangHae99_Chapter2
 항해99 챕터2 자료구조/알고리즘
 
-1주차 : **알고리즘 개요**
-- 수업
-  - 알고리즘 개요
-- 과제 (문자열 조작 / 배열)
-  - 그룹 애너그램
-  - 가장 긴 팰린드롬 부분 문자열
-  - 세 수의 합
-  - 배열 파티션
+- 기본 자료구조 (1주차)
+    - 1회차 : **알고리즘 개요**
+        - 수업
+            - 알고리즘 개요
+        - 과제 (문자열 조작 / 배열)
+            - 그룹 애너그램
+            - 가장 긴 팰린드롬 부분 문자열
+            - 세 수의 합
+            - 배열 파티션
+    - 2회차 : **8장 연결 리스트**
+        - 수업
+            - 개념 설명
+        - 과제
+            - 역순 연결 리스트
+            - 두 정렬 리스트의 병합
+            - 홀짝 연결 리스트
+    - 3회차 : **9장 스택**
+        - 수업
+            - 개념 설명
+            - 예제
+                - 해시맵 디자인
+        - 과제
+            - 중복 문자 제거
+            - 일일 온도
+        - 추가 과제
+            - [https://www.acmicpc.net/problem/9012](https://www.acmicpc.net/problem/9012)
+            - [https://www.acmicpc.net/problem/1874](https://www.acmicpc.net/problem/1874)
+    - 4회차 : **9장 큐**
+        - 수업
+            - 개념 설명
+        - 과제
+            - 큐를 이용한 스택 구현
+            - 스택을 이용한 큐 구현
+            - 원형 큐 디자인
+        - 추가 과제
+            - [https://www.acmicpc.net/problem/2164](https://www.acmicpc.net/problem/2164)
+            - [https://www.acmicpc.net/problem/1966](https://www.acmicpc.net/problem/1966)
+    - 5회차 : **11장 해시 테이블**
+        - 수업
+            - 개념 설명
+            - 예제
+                - 해시맵 디자인
+        - 과제
+            - 보석과 돌
+            - 중복 문자가 없는 가장 긴 부분 문자열
+            - 상위 K 빈도 요소
+        - 추가 과제
+            - [https://www.acmicpc.net/problem/1920](https://www.acmicpc.net/problem/1920)
+            - [https://www.acmicpc.net/problem/17219](https://www.acmicpc.net/problem/17219)
+- 그래프/트리 (2주차)
+    - 6회차 : 12장 그래프 + DFS
+        - 수업
+            - 개념 설명
+            - 예제 문제
+                - 섬의 개수
+        - 과제
+            - 전화번호 문자 조합
+            - 순열
+            - 조합
+        - 추가 과제
+            - [https://www.acmicpc.net/problem/2667](https://www.acmicpc.net/problem/2667)
+            - [https://www.acmicpc.net/problem/2606](https://www.acmicpc.net/problem/2606)
+    - 7회차 : 12장 BFS
+        - 수업
+            - 개념 설명
+            - 예제 문제
+                - 조합의 합
+        - 과제
+            - 부분 집합
+            - 일정 재구성
+            - 코스 스케줄
+        - 추가 과제
+            - [https://www.acmicpc.net/problem/2667](https://www.acmicpc.net/problem/2667)
+            - [https://www.acmicpc.net/problem/2606](https://www.acmicpc.net/problem/2606)
+    - 8회차 : 12장 백트래킹
+        - 수업
+            - 예제 문제
+                - [https://www.acmicpc.net/problem/9663](https://www.acmicpc.net/problem/9663)
+        - 과제
+            - [https://www.acmicpc.net/problem/9095](https://www.acmicpc.net/problem/9095)
+        - 심화 과제
+            - [https://www.acmicpc.net/problem/1759](https://www.acmicpc.net/problem/1759)
+    - 9회차 : 14장 이진 트리
+        - 수업
+            - 개념 설명
+            - 예제 문제
+                - 이진 트리의 최대 깊이
+        - 과제
+            - 이진 트리의 직경
+            - 가장 긴 동일 값의 경로
+            - 이진 트리 반전
+        - 추가 과제
+            - [https://www.acmicpc.net/problem/11725](https://www.acmicpc.net/problem/11725)
+        
+    - 10회차 : 14장 이진 트리
+        - 수업
+            - 개념 설명
+            - 예제 문제
+                - 두 이진 트리 병합
+        - 과제
+            - 이진 트리 직렬화 & 역직렬화
+            - 균형 이진 트리
+            - 최소 높이 트리
+        - 추가 과제
+            - [https://www.acmicpc.net/problem/1068](https://www.acmicpc.net/problem/1068)
+- 탐색 (3~4주차)
+    - 11회차 : **15장 힙**
+        - 힙
+            - 개념 설명
+                - 삽입
+                - 추출
+        - 과제
+            - 배열의 K번째 큰 요소
+        - 추가 과제
+            - [boj] [https://www.acmicpc.net/problem/1927](https://www.acmicpc.net/problem/1927)
+            - [boj] [https://www.acmicpc.net/problem/11279](https://www.acmicpc.net/problem/11279)
+    - 12회차 : 17장 정렬
+        - 개념 설명
+            - 버블 정렬
+            - 선택 정렬
+            - 삽입 정렬
+        - 과제
+            - 삽입 정렬 리스트
+            - 가장 큰 수
+        - 추가 과제
+            - [boj] [https://www.acmicpc.net/problem/5052](https://www.acmicpc.net/problem/5052)
+    - 13회차 : 17장 정렬
+        - 개념 설명
+            - 퀵 정렬
+        - 과제
+            - 리스트 정렬
+            - 색 정렬
+        - 추가 과제
+            - [boj] [https://www.acmicpc.net/problem/11650](https://www.acmicpc.net/problem/11650)
+            - [boj] [https://www.acmicpc.net/problem/11651](https://www.acmicpc.net/problem/11651)
+    - 14회차 : 17장 정렬
+        - 개념 설명
+            - 병합 정렬
+        - 과제
+            - 구간 병합
+        - 추가 과제
+            - [boj] [https://www.acmicpc.net/problem/1181](https://www.acmicpc.net/problem/1181)
+    - 15회차 : 17장 정렬
+        - 개념 설명
+            - 힙 정렬
+        - 과제
+            - 유효한 애너그램
+        - 추가 과제
+            - [boj] [https://www.acmicpc.net/problem/10814](https://www.acmicpc.net/problem/10814)
+            - [boj] [https://www.acmicpc.net/problem/2751](https://www.acmicpc.net/problem/2751)
+    
+    - 16회차: **18장 이진 탐색**
+        - 개념 설명
+            - 이진 탐색
+            - 회전 정렬된 배열 검색
+            - 두 배열의 교집합
+        - 과제
+            - 두 수의 합 2
+            - 2D 행렬 검색 2
+    - 17회차: **18장 이진 탐색**
+        - 문제 풀이 (이코테)
+            - 고정점 찾기
+            - 공유기 설치
+        - 심화 과제
+            - [boj] [https://www.acmicpc.net/problem/2512](https://www.acmicpc.net/problem/2512)
+            - [boj] [https://www.acmicpc.net/problem/2805](https://www.acmicpc.net/problem/2805)
+            - [boj] [https://www.acmicpc.net/problem/1654](https://www.acmicpc.net/problem/1654)
+    - 18회차 : **13장 최단 경로**
+        - 개념 설명
+            - 최단 경로
+            - 다익스트라
+            - 화성 탐사
+            - 숨바꼭질
+        - 과제
+            - 네트워크 딜레이 타임
+            - K 경유지 내 가장 저렴한 항공권
+    - 19회차 : **13장 최단 경로**
+        - 개념 설명
+            - 플로이드-워셜
+        - 심화 과제
+            - [boj] [https://www.acmicpc.net/problem/1753](https://www.acmicpc.net/problem/1753)
+            - [boj] [https://www.acmicpc.net/problem/1956](https://www.acmicpc.net/problem/1956)
+            - [boj] [https://www.acmicpc.net/problem/4485](https://www.acmicpc.net/problem/4485)
+    - 20회차 : **23장 Dynamic Programming**
