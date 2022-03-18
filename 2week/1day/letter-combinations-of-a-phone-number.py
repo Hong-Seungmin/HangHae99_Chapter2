@@ -1,7 +1,8 @@
 # https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 from typing import List
 
-
+# 주어잔 숫자열을 이용하여,
+# 전화번호와 같은 문자체계에 맞게 문자열을 조합하여 반환하라.
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         answer = []
