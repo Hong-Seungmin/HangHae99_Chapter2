@@ -15,41 +15,87 @@ class Solution:
         courses_dict = collections.defaultdict(list)
 
         for course in prerequisites:
-            courses_dict[course[0]].append(course[1])
+            courses_dict[course[0]].append(course[1]) \
+ \
+        # 힌트를 보고 작성하였다. DFS 이다.
 
-        for i in list(courses_dict.keys()):  # 테스트 케이스에서 0부터 시작안하는 노드가 있어서 키값을 기준으로 하였다.
-            # for i in range(numCourses):
-            visited_course = set()
-            success_course = set()
-            queue = collections.deque([i])
+        # 순환그래프를 탐지하기위한 traced이다.
+        # traced는 현재 진행중인 노드들을 담고, 처리완료된 노드는 다시 꺼낸다.
+        # 즉, 탐지중 traced에 들어있는 자식노드가 나오면 순환그래프가 된다.
+        traced = set()
+        # 처리완료한 모든 노드를 담는다.
+        visited = set()
 
-            while queue:
-                course = queue.popleft()
-                if course in success_course:
-                    continue
-                if course in visited_course:
+        # 각 노드별로 dfs방식으로 순환그래프 여부를 판단한다.
+        def dfs(i) -> bool:
+            # 현재 진행중인 노드에 존재한다면 False
+            if i in traced:
+                return False
+            # 이미 완료한곳이면, 중복으로 하지 않는다.
+            if i in visited:
+                return True
+
+            # 현재 진행리스트에 노드를 등록한다.
+            traced.add(i)
+
+            # 자식 노드들을 재귀적으로 탐색한다.
+            for course in courses_dict[i]:
+                # 자식노드가 순환이라면 False를 반환한다.
+                if not dfs(course):
                     return False
-                else:
-                    visited_course.add(course)
-                    if not courses_dict[course]:
-                        success_course.add(course)
-                    else:
-                        for sub_course in courses_dict[course]:
-                            if sub_course not in success_course:
-                                queue.append(sub_course)
+            # 모든 자식노드가 순환이 안된다면,
+            # 이 노드 밑으로는 순환이 없으므로 진행을 완료한다.
+            traced.remove(i)
+            visited.add(i)
+
+            return True
+
+        # 각 노드마다 서브 그래프가 존재하므로,
+        # 모든 노드를 기준으로 탐색한다.
+        for x in list(courses_dict):
+            if not dfs(x):
+                return False
 
         return True
 
+        # ########################################
+        # ####### 실패 안, 중간노드를 완료처리하지 못하겠다.
+        # ####### bfs방식으로 이미 지나간 노드 확인이 안된다.
+        # ####### 별도의 지나간노드를 추적하는 공간이 필요하다.
+        # for i in list(courses_dict.keys()):  # 테스트 케이스에서 0부터 시작안하는 노드가 있어서 키값을 기준으로 하였다.
+        #     # for i in range(numCourses):
+        #     visited_course = set()
+        #     success_course = set()
+        #     queue = collections.deque([i])
+        #
+        #     while queue:
+        #         course = queue.popleft()
+        #         if course in success_course:
+        #             continue
+        #         if course in visited_course:
+        #             return False
+        #         else:
+        #             visited_course.add(course)
+        #             if not courses_dict[course]:
+        #                 success_course.add(course)
+        #             else:
+        #                 for sub_course in courses_dict[course]:
+        #                     if sub_course not in success_course:
+        #                         queue.append(sub_course)
+        #
+        # return True
+        # ###########################################
+
 
 sol = Solution()
-# assert sol.canFinish(5, [[1, 4], [2, 4], [3, 1], [3, 2]]) is True
-# print("테스트1 완료")
-# assert sol.canFinish(5, [[0, 1], [1, 2], [1, 3], [2, 4]]) is True
-# print("테스트2 완료")
-# assert sol.canFinish(5, [[0, 1], [1, 2], [1, 3], [2, 4], [4, 3]]) is True
-# print("테스트3 완료")
-# assert sol.canFinish(4, [[0, 1], [1, 2], [2, 3], [3, 1]]) is False
-# print("테스트4 완료")
+assert sol.canFinish(5, [[1, 4], [2, 4], [3, 1], [3, 2]]) is True
+print("테스트1 완료")
+assert sol.canFinish(5, [[0, 1], [1, 2], [1, 3], [2, 4]]) is True
+print("테스트2 완료")
+assert sol.canFinish(5, [[0, 1], [1, 2], [1, 3], [2, 4], [4, 3]]) is True
+print("테스트3 완료")
+assert sol.canFinish(4, [[0, 1], [1, 2], [2, 3], [3, 1]]) is False
+print("테스트4 완료")
 assert sol.canFinish(8, [[1, 0], [2, 6], [1, 7], [6, 4], [7, 0], [0, 5]]) is True
 print("테스트5 완료")
 # asd = [1, 2, 3]
