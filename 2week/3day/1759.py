@@ -28,7 +28,7 @@ def dfs(start_index):
                 cnt_consnant += 1
         # 결과에 만족하면 answer를 출력한다.
         if cnt_vowel >= 1 and cnt_consnant >= 2:
-            print(answer)
+            print(''.join(answer))
         # 결과 유무에 상관없이 L글자라면 True를 반환하여, pop을 유도한다.
         return True
 
