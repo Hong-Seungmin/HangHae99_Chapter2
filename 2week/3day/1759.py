@@ -38,7 +38,10 @@ def dfs(start_index):
     start_index_gap = 0
 
     # main_str을 순번에 맞게 탐색한다.
-    for char in main_str[start_index:C]:
+    # 4글자를 만들수없는 범위(뒤쪽)까지 탐색을한다. 이부분은 변경하여야한다.
+    # 첫 호출(start_index가 0일때)는 중간까지 탐색, 그 이후는 점차 끝까지 범위를 조절해야한다.
+    # (완료) 나름 처리하지 않아도 될 부분은 줄였다. C - L + start_index + 1 // 반복이 1은 미만됨으로 1 더한것이다.
+    for char in main_str[start_index:C - L + start_index + 1]:
         answer.append(char)
         if dfs(start_index + 1 + start_index_gap):
             answer.pop()
