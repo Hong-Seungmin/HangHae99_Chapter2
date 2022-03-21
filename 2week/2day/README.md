@@ -1,6 +1,7 @@
 # 2주차 2일
 
 ## 3월 19일
+### [연습장 링크](https://jamboard.google.com/d/14c483KqBxYlL9PfFp6nCwDAJgZ3mYzAIex-rd8CfiQc/edit?usp=sharing)
 
 - 1주차 마지막에 병원갈일이 생겨 스케줄에 지장이 생겼다.
 
