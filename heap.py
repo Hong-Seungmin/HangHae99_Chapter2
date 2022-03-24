@@ -122,6 +122,6 @@ if __name__ == "__main__":
     heap = Heap(reverse=False)
     for _ in range(50):
         heap.put(random.randrange(0, 50))
-    print(heap.__str__())
+    print(heap)
     for _ in range(50):
         print(heap.pop())
