@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/implement-queue-using-stacks/
+import copy
+
 
 class Node:
     def __init__(self, x: int):
