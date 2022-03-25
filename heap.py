@@ -87,7 +87,7 @@ class Heap:
         if self.isEmpty():
             return None
 
-        return self.list[self.get_root_index()]
+        return self.get_reverse_value(self.list[self.get_root_index()])
 
     def get_last_index(self):
         return self._size - 1
@@ -123,5 +123,23 @@ if __name__ == "__main__":
     for _ in range(50):
         heap.put(random.randrange(0, 50))
     print(heap)
-    for _ in range(50):
+    for _ in range(10):
         print(heap.pop())
+    for _ in range(10):
+        heap.put(random.randrange(0, 50))
+    print(heap)
+    for _ in range(10):
+        print(heap.pop())
+    for _ in range(10):
+        heap.put(random.randrange(0, 50))
+    print(heap)
+    for _ in range(10):
+        print(heap.pop())
+    for _ in range(10):
+        heap.put(random.randrange(0, 50))
+    print(heap)
+    for _ in range(10):
+        print(heap.pop())
+    for _ in range(10):
+        heap.put(random.randrange(0, 50))
+    print(heap)
