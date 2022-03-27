@@ -29,21 +29,23 @@ public class Sort_Colors {
             // mid보다 작으면, i,j인덱스 값을 스왑한다.
             // 그리고 j의 올려줌으로써 교체한 값을 확정한다.
             if (nums[i] < mid) {
-                int tmp = nums[i];
-                nums[i] = nums[j];
-                nums[j] = tmp;
+                this.swapInt(nums, i, j);
                 j += 1;
             }
             // mid보다 크다면, 뒷쪽 인덱스 k의 값과 스왑한다,
             // 그리고 k 인덱스를 내림으로써 교체한 값을 확정한다.
-            else if(nums[i] > mid){
+            else if (nums[i] > mid) {
                 k -= 1;  //length 부터 시작함으로 먼저 내려준다.
-                int tmp = nums[i];
-                nums[i] = nums[k];
-                nums[k] = tmp;
+                this.swapInt(nums, i, k);
                 i -= 1; //원래 k인덱스의 값을 연산하기 위해 i를 올리지 않게 내려준다.
             }
         }
+    }
+
+    private void swapInt(int[] array, int i, int j) {
+        int tmp = array[i];
+        array[i] = array[j];
+        array[j] = tmp;
     }
 
     public static void main(String[] args) {
