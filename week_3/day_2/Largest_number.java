@@ -1,10 +1,5 @@
 package day_2;
 
-import sun.jvm.hotspot.utilities.IntArray;
-
-import java.util.Arrays;
-import java.util.stream.IntStream;
-
 public class Largest_number {
     public static void main(String[] args) {
         Solution sol = new Solution();
@@ -14,7 +9,7 @@ public class Largest_number {
 
 // 주어진 정수 배열을 이용하여,
 // 만들 수 있는 가장 큰 숫자의 문자열을 반환하라.
-class Solution {
+class Solution1 {
 
     // 숫자 배열을 정렬한 다음, 문자열로 만들면 가장 큰 숫자가 구성될것이다.
     // 단, 숫자의 가장 앞자리부터 기준으로 9에 가까운것이 앞으로 정렬해야한다.
