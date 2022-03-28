@@ -1,7 +1,7 @@
 # 3주차 3일
 
 ## 3월 27일
-### [연습장 링크](https://jamboard.google.com/d/1H_a7VD-KmpzxAa43--gi9815TTP0G7OG8vy2NFPeZHM/edit?usp=sharing)
+### [연습장 링크](https://jamboard.google.com/d/1CQj-56wlrz-EwKMW2CJNlP_UizT1iFcR9lobT9XQ7LI/edit?usp=sharing)
 
 - 자바로 문제를 푸는 중이다. 문자열을 정수로 변환해야하는데.. 헤깔렸다.. (내 기억엔 parseInt()를 예전에 썻던거같다.)
 
@@ -25,3 +25,7 @@
  - 오늘은.. 12시까지 풀잠으로 오전을 그냥 허비? 회복? 하고, 5시까지 책읽고, 문제보고 이것저것 일상을 보다가
  
    5~7시까지 책읽고.... 9시까지 또 잤다. 그간 2주간 몸을 굴린게 이제 버티기 힘든가... 눕는순간 자게된 하루 였다.
+   
+## 3월 28일
+
+- 
