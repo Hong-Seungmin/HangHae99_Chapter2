@@ -57,6 +57,7 @@ public class QuickSort {
             if (list.get(currentIndex) <= pivot) {
                 targetIndex += 1;
 
+                //TODO set()으로 스왑이 안되는 이유는 무엇일까?
 //                int swapTmp = list.get(targetIndex);
 //                list.set(targetIndex, list.get(currentIndex));
 //                list.set(currentIndex, swapTmp);
