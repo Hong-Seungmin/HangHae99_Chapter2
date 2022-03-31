@@ -3,6 +3,13 @@
 
 import java.util.Arrays;
 
+// 주어진 문자열을 정렬한다.
+// head : 첫글짜부터 숫자가 나오지 전까지 문자열
+// number : 첫 숫자부터 숫자가 아닌 문자가 나올때 까지 문자열
+// tail : 마지막 숫자 다음부터 주어진 문자열 끝까지 문자열
+// *head를 우선 오름차순 정렬, 이후 number를 오름차순 정렬
+// **head의 대소문자는 구분없이 취급한다.
+// **number의 001 같은 숫자는 1로 취급한다.
 public class Prog_17686 {
 
     public static void main(String[] args) {
